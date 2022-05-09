@@ -4,8 +4,7 @@ This repo stores codes related to the paper submitted to CCS.
 ### - Datasets
 Due to limitations as described in the paper, we cannot provide the full ClientHello dataset and the Lab Dataset. Instead, we provide the following datasets in the **datasets** folder:
   - A sub ClientHello dataset, containing a random sample of 100 rows from the full ClientHello dataset:
-      - ```sample_100.csv``` (a random sample of 100 rows from the full ClientHello dataset)
-      - ```sample_100_with_sni.parquet``` (a random sample of 100 rows from the full ClientHello dataset, with visited SNIs)
+      - ```sample_100.csv``` (a random sample of 100 rows from the full ClientHello dataset, with visited SNIs)
   - A ciphersuite-mapping dataset: ```ciphersuite_map.csv``` (to map ciphersuite code to actual algorithms)
   - A full dataset containing all SNIs that 2014 IoT devices talked to: ```sni_used_to_generate_pcaps.parquet```
   - A full Server Certificate datasets, from three geolocations: New York, Frankfurt, and Singapore:
