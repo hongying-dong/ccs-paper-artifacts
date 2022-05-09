@@ -20,7 +20,7 @@ Due to limitations as described in the paper, we cannot provide the full ClientH
   - A host-blocking list: 
       - ```hosts-blocklists.txt```(reference: https://github.com/notracking/hosts-blocklists/)
   - A full Smart TV dataset:
-      - ```smarttv_ssl.parquet``` (Zeek processed ssl.log from Smart TV traffic)
+      - ```smarttv_ssl.parquet``` (Zeek processed ssl.log from Smart TV traffic; Dropped duplicates on {originator_ip, responder_ip, version, cipher, curve, server_name, cert_chain_fps, validation_status} due to limitations in file size when uploading)
       - ```smarttv_x509.parquet``` (Zeek processed x509.log from Smart TV traffic)
  
 ### - Analysis Code
