@@ -4,9 +4,16 @@ This repo stores codes related to the paper submitted to CCS.
 ### - Datasets
 Due to limitations as described in the paper, we cannot provide the full ClientHello dataset and the Lab Dataset. Instead, we provide the following datasets in the **datasets** folder:
   - A sub ClientHello dataset, containing a random sample of 100 rows from the full ClientHello dataset
-  - A full Server Certificate datasets (parsed), from three geolocations: New York, Frankfurt, and Singapore
-  - A full dataset containing crt.sh query results
-  - A full Smart TV dataset (parsed)
+  - A full dataset containing all SNIs that 2014 IoT devices talked to: ```sni_used_to_generate_pcaps.parquet```
+  - A full Server Certificate datasets, from three geolocations: New York, Frankfurt, and Singapore:
+      - ```ny_serv_withcrt.parquet``` (parsed New York server-side dataset, merged with crt.sh query results)
+      - ```ny_zeek_sslx509.csv``` (Zeek processed New York capture, ssl.log merged with x509.log on certificate fingerprints for info on leaf certificates/chains)
+      - ```ny_zeek_x509.csv``` (Zeek processed New York capture, for info on intermediate/root certificates)
+      - ```ff_serv.parquet```
+      - ```sin_serv.parquet```
+  - A full dataset containing crt.sh query results: ```ct_res.csv```
+  - A host-blocking list: ```hosts-blocklists.txt```(reference: https://github.com/notracking/hosts-blocklists/)
+  - A full Smart TV dataset
  
 ### - Analysis Code
   - We performed analysis mainly using Jupyter Notebooks, and we provide all the notebooks in the **notebooks** folder. We named each notebook based on the its content. Note that analysis in **Case Study: Section 6.2 PKI on the local network** were performed using Wireshark, so there are no related notebooks. 
