@@ -9,7 +9,7 @@ Due to limitations as described in the paper, we cannot provide the full ClientH
   - A full Smart TV dataset (parsed)
  
 ### - Analysis Code
-  - We performed analysis mainly using Jupyter Notebooks, and we provide all the notebooks in the **notebooks** folder. We named each notebook based on the its content. Note that analysis in **Case Study: Section 6.2 PKI on the local network** were performed using Wireshark, so there is no related notebooks. 
+  - We performed analysis mainly using Jupyter Notebooks, and we provide all the notebooks in the **notebooks** folder. We named each notebook based on the its content. Note that analysis in **Case Study: Section 6.2 PKI on the local network** were performed using Wireshark, so there are no related notebooks. 
 
 ### - Notebook status and running notebooks
   - All notebooks currently are in the status of showing all statistics/tables/figures that we put in the paper.
