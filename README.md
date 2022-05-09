@@ -1,4 +1,4 @@
-# ccs-paper-artifacts
+# CCS Paper Artifacts
 This repo stores codes related to the paper submitted to CCS. 
 
 ### - Datasets
